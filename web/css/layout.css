@@ -1,0 +1,44 @@
+body {
+    padding: 5%;
+}
+
+.calendar .calendar-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+}
+.calendar .calendar-row .day.next-month,
+.calendar .calendar-row .day.previous-month {
+    color: #dddddd;
+}
+.calendar .calendar-row .day span.highlight {
+    font-weight: bold;
+}
+.calendar .calendar-row .day {
+    width: 13.28%;
+    flex-flow: column;
+    min-height: 100px;
+    margin-right: 1%;
+    padding: 5px;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 3px;
+}
+.calendar .calendar-row .day:hover {
+    box-shadow: 0 0 10px #0085c8;
+}
+.calendar .calendar-row .day.today {
+    background: #0085c8;
+    color: white;
+}
+.calendar .calendar-row .day.today a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.calendar .calendar-row .day .item-container {
+    padding: 2px;
+}
+.calendar .calendar-row .day .item-container .item {
+    font-style: italic;
+}
