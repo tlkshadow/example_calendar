@@ -1,15 +1,12 @@
 <?php
 
+// composer autoload file
+include __DIR__ . '/vendor/autoload.php';
+
 use App\Calendar\Paginator\CalendarPaginator;
 use App\Calendar\Renderer\CalendarRenderer;
 use App\Calendar\Exception\DateTimeException;
 use App\Calendar\Validator\RequestDateValidator;
-
-include __DIR__ . '/src/App/Calendar/Exception/DateTimeException.php';
-include __DIR__ . '/src/App/Calendar/Validator/RequestDateValidator.php';
-include __DIR__ . '/src/App/Calendar/Paginator/CalendarPaginator.php';
-include __DIR__ . '/src/App/Calendar/Renderer/RenderInterface.php';
-include __DIR__ . '/src/App/Calendar/Renderer/CalendarRenderer.php';
 
 $date = 'now';
 if (isset($_GET['date'])) {
